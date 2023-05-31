@@ -1,0 +1,477 @@
+body, h1, h2, p, ul, li, a{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Nunito",Helvetica, Arial, sans-serif;
+    color: aqua;
+    background: black;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    /* define um elemento HTML como um bloco sólido 
+    que ocupa todo o espaço horizontal disponível 
+    e começa em uma nova linha. Ele possui propriedades 
+    adicionais para controlar tamanho, margens e preenchimento */
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Contato e Endereço */
+
+.superinfo-bg{
+    background: #122ab2;
+    color: white;
+}
+
+/* div com as informações alterando as posições */
+.superinfo{
+    /* max-width faz a div com o conteúdo ocupar um determinado espaço */
+    max-width: 960px;
+    /* margin coloca margem entre o conteúdo e a borda da div */
+    /* essa opção margin: 0 auto; deixa 0px para cima e para baixo e automatico para os lados direita e esquerda */
+    margin: 0 auto;
+    /* display: flex faz os elementos ir um para o lado do outro respeitando o tamanho de cada elemento */
+    display: flex;
+    /* justify-content: justica o conteúdo na posição que você deseja */
+    /* justify-content: space-between  cria espaço entre os elementos */
+    justify-content: space-between;
+    /* flex-wrap: wrap quebra a informação para a próxima linha */
+    flex-wrap: wrap;
+    /* padding-top é o espaçamento do elemento e a borda */
+    padding-top: 10px;
+}
+
+.superinfo p , .superinfo a {
+    /* não fica colado no contener e quando quebrar a página vai ter espaçaçmento */
+    margin: 0 10px 10px 10px;
+}
+
+/* link do contato deixando na cor branca */
+.superinfo a {
+    color: white;
+}
+
+/* Menu */
+
+.menu-bg {
+    background: #2c70ff;
+}
+
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    /* padding: 15px 0 - deixa um espaçamento de 15px em cima e em baixo e 0 dos lados */
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center -  faz os itens ficar alinhados no centro da div */
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+}
+
+.menu-logo  a{
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    /* deixar o intens alinhados em colunas e um do lado do outro */
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover{
+    color:rgb(232, 205, 154);
+}
+
+/* Introdução */
+
+.introducao {
+    font-size: 3em;
+    /* quando o titulo for muito grande... dimunir o line-height dela */
+    line-height: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
+/* Home */
+
+.home {
+    border-top: 2px solid #2c70ff;
+    border-bottom: 2px solid #2c70ff;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-info {
+    /* o terceiro valor dentro do flex representa o maximo de uma tela
+    que o conteudo pode ocupar... ou seja ele substitui o @media na questão 
+    de responsividade da página */
+    flex: 2 1 300px;
+    margin: 0 10px;
+}
+
+.home-info h1 {
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.home-info p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.home-img {
+    flex: 1 1 160px;
+    margin: 0 10px;
+    align-items: center;
+}
+
+/* Sobre */
+
+.sobre {
+    border-top: 2px solid #2c70ff;
+    border-bottom: 2px solid #2c70ff;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    /* o terceiro valor dentro do flex representa o maximo de uma tela
+    que o conteudo pode ocupar... ou seja ele substitui o @media na questão 
+    de responsividade da página */
+    flex: 2 1 300px;
+    margin: 0 10px;
+}
+
+.sobre-info h1 {
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.sobre-img {
+    flex: 1 1 160px;
+    margin: 0 10px;
+}
+
+/* Projetos */
+
+.projetos {
+    max-width: 960px;
+    margin: 60px auto;
+}
+
+.projetos h1{
+    font-size: 3em;
+    margin: 0 10px 60px 10px;
+}
+
+.projetos-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.projetos-item {
+    flex: 1 1 175px;
+    margin: 10px;
+}
+
+.projetos-item h2 {
+    font-size: 3em;
+    color: #f3e3e3;
+    background: #726f6f;
+    padding: 60px 20px;
+}
+
+.front{
+
+    border-top: 8px solid aqua;
+}
+
+.back{
+
+    border-top: 8px solid red;
+}
+
+/* preco */
+
+.preco {
+    background: #726f6f;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.preco-item {
+    flex: 1 1 260px;
+    border: 4px solid white;
+    padding: 20px;
+    margin: 10px;
+    /* min-width: 260px; */
+}
+
+.preco-item h2 {
+    font-size: 3em;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.preco-item span{
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.preco-item sup{
+    /* rem - é relativo ao font-size do e-mail devinido na classe pai */
+    /* se deixar com em ela soma com o valor atribuido na classe pai */
+    font-size: 1.5rem;
+}
+
+.preco-item ul {
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.25em;
+    line-height: 2;
+    font-style: italic;
+    color: #f3e3e3;
+}
+
+/* criando a bolinha após o item*/
+/* a opção ::after cria depois do item que deseja */
+
+.preco-item li::after{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: wheat;
+    border-radius: 50%;
+}
+
+.preco-item li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.preco-item a {
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.25em;
+    padding: 15px 0;
+    text-align: center;
+
+}
+
+@media (max-width: 800px){
+    .preco{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .preco .preco-item:nth-child(3){
+        order: -2;
+    }
+    .preco .preco-item:nth-child(2){
+        order: -1;
+    }
+}
+
+
+/* Qualidade */
+
+.qualidade {
+    max-width: 960px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qualidade-item {
+    flex: 1 1 300px;
+    margin: 20px 10px;
+}
+
+.qualidade-item h2 {
+    font-size: 1.25em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* ::before cria o conteudo antes do item desejado */
+.qualidade-item h2::before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* essa função :nth-of-type() vai selecionar a 
+condição que colocar dentro do parenteses */
+
+.qualidade-item:nth-of-type(3n+1) h2::before {
+    background: #ae81ff;
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before {
+    background: #f9265e;
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before {
+    background: #66d9eb;
+}
+
+.qualidade-item p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #b2b2b2;
+}
+
+/* Contato */
+
+.s3systems{
+    background: #f7f7f7;
+    /* a função calculo você coloca a porcentagem que o elemento tem que tomar
+    e subtrai pelo tamanho da página após isso divide por 2.
+    então o conteudo irá ocupar 60px do valor dado no calculo */
+    padding: 60px calc((100% - 960px)/2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.s3systems-info{
+    flex: 1 1 240px;
+    margin: 0 10px;
+}
+
+.s3systems-info h1 {
+    font-size: 3em;
+    color: #a4a4a4;
+}
+
+.s3systems-info p {
+    font-size: 1.25em;
+    font-style: italic;
+    max-width: 230px;
+    color: #7c7c7c;
+    margin-bottom: 10px;
+}
+
+
+.s3systems-form{
+    flex: 2 1 260px;
+    margin: 0 10px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.s3systems-form input {
+    flex: 3 1 260px;
+    font-size: 1.25px;
+    color: #7c7c7c;
+    font-style: italic;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    border: 4px solid #2c70ff;
+    background: transparent;
+    padding: 15px 10px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.s3systems-form button {
+    flex: 1 1 260px;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #2c70ff;
+    color: white;
+    margin: 0px;
+    cursor: pointer;
+    border: 0px;
+    padding: 15px 10px;
+
+}
+
+@media(mas-width: 600px){
+    .s3systems-form button {
+        font-size: 1.5em;
+    }
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    background: #2c70ff;
+    height: 200px;
+    align-items: center;
+}
+
+.footer p {
+    flex: 1;
+    text-align: center;
+    font-size: 2.25em;
+    color: white;
+}
+
